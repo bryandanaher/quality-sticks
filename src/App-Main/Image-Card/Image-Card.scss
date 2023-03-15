@@ -1,0 +1,47 @@
+@import "src/index.scss";
+
+.imageCardContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+    background-image: url("/ai_twig_blue.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 20px $dark;
+    position: relative;
+}
+.cardCallToAction {
+    text-align: center;
+    margin: 1rem 2% 0 2%;
+    width: 20rem;
+}
+.cardCallToAction h1 {
+    color: $white;
+    line-height: 2.5rem;
+}
+.cardCallToAction p {
+    color: $white;
+}
+.cardCallToAction button {
+    background-color: $light;
+    border: none;
+    color: $dark;
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+    width: 80%;
+}
+.cardCallToAction button:hover {
+    background-color: $light-accent;
+    color: $white;
+}
+
+@media only screen and (max-width: 500px) {
+    .imageCardContainer {
+        justify-content: center;
+    }
+    .cardCallToAction {
+        margin: 20% 2% 0 2%;
+    }
+}

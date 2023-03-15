@@ -1,0 +1,146 @@
+@import "../index.scss";
+
+footer {
+    color: $white;
+    min-height: 200px; 
+    background: $dark;
+    z-index: 0;
+    overflow: hidden;
+}
+footer img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+}
+footer button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+footer button:focus {
+    outline: none;
+}
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 2;
+}
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    // padding: 0 .5rem;
+    padding: 2rem;
+}
+.footerColumn > .smallText {
+    color: $white;
+    text-decoration: none;
+    // margin-bottom: 1rem;
+}
+.footerColumn .inline {
+    align-items: center;
+}
+.footerColumn h2 {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    width: fit-content;
+    border-bottom: 2px solid $white;
+}
+.footerColumnRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.footerColumnRight .footerRow {
+    margin-top: 1rem;
+}
+.verticalBar {
+    border-right: 2px solid $white;
+}
+.inline .fa-award {
+    color: $white;
+    height: 2rem;
+    margin-right: 10px;
+}
+.inline .fa-medal {
+    margin-right: 8px;
+}
+.inline .fa-bolt {
+    margin-right: 8px;
+}
+.inline .fa-trophy {
+    margin-right: 8px;
+}
+.inline .fa-crown {
+    margin-right: 8px;
+}
+
+.smallTitle {
+    font-family: GreatVibes, Garamond, Georgia, "Comic Sans MS";
+    font-size: 1.5rem;
+}
+.smallLink {
+    cursor: pointer;
+}
+.easterEgg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+    z-index: 2;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    box-shadow: none;
+}
+.easterSticks {
+    background-image: url("/ai_messy.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .footerRow {
+        margin: 0.5rem;
+    }
+    .footerColumn {
+        padding: 1rem;
+    }
+    .footerColumn .footerRow {
+        margin: 0.5rem 0;
+    }
+    .footerColumn h1 {
+        line-height: 2rem;
+    }
+    .footerColumnRight .footerRow {
+        flex-direction: column;
+    }
+    .easterEgg {
+        padding-top: 1rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .footerColumn .inline {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerColumnRight .footerRow {
+        margin: 0;
+        align-items: center;
+    }
+    .footerColumnRight .footerColumn {
+        text-align: center;
+        align-items: center;
+        // padding: 0;
+    }
+}

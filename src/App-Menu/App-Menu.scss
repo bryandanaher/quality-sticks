@@ -1,0 +1,28 @@
+@import "../index.scss";
+
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 115px;
+  padding: 0 2rem;
+  color: $white;
+  background-color: $dark;
+}
+.title {
+  font-family: GreatVibes, Garamond, Georgia, "Comic Sans MS";
+  font-size: 4rem;
+}
+.menubar .title {
+  margin-left: 32px;
+}
+.menubar .fa-cart-shopping {
+  color: $white;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .menubar .title {
+      font-size: 2.5rem;
+  }
+}

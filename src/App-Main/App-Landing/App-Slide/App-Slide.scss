@@ -1,0 +1,128 @@
+@import "src/index.scss";
+
+.slideContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.slideNavContainer {
+    display: flex;
+    height: 100%;
+    min-width: 40px;
+    flex-direction: column;
+    justify-content: center;
+}
+.slideNavContainer button {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 3rem;
+    padding: 1rem 0.7rem;
+    border: none;
+    background-color: $light-accent;
+    color: $black;
+}
+.slideNavContainer:hover button {
+    background-color: $dark-accent;
+}
+.callToActionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+.callToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 20rem;
+    height: 20rem;
+    color: $light-accent;
+    white-space: normal;
+    text-shadow: 1px 1px 20px $white;
+}
+.callToAction button {
+    color: $white;
+    font-size: 1.2rem;
+    background-color: $dark;
+    border: none;
+    padding: 1rem 3rem;
+}
+.callToAction button:hover {
+    background-color: $light-accent;
+}
+.cta-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1d1d1d;
+    line-height: 3rem;
+}
+.cta-sub {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+// arrow
+div.leftArrow {
+    transform: rotate(-135deg);
+}
+div.rightArrow {
+    transform: rotate(45deg);
+}
+div.arrow {
+    width: 21px;
+    height: 21px;
+    &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-width: 5px 5px 0 0;
+        border-style: solid;
+        border-color: $white;
+        transition: 0.2s ease;
+        display: block;
+        transform-origin: 100% 0;
+    }
+    &::after {
+        content: "";
+        float: left;
+        position: relative;
+        top: -16px;
+        width: 16px;
+        height: 16px;
+        border-width: 0 5px 0 0;
+        border-style: solid;
+        border-color: $white;
+        transform-origin: 100% 0;
+        transition: 0.2s ease;
+    }
+    &:hover::after {
+        transform: rotate(45deg);
+        border-color: $dark;
+        height: 20px;
+        width: 15px;
+    }
+    &:hover::before {
+        border-color: $dark;
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .callToActionContainer {
+        padding-bottom: 20%;
+    }
+    .slideNavContainer {
+        min-width: 2rem;
+        // padding: 1rem 0.7rem;
+    }
+    .slideNavContainer button {
+        width: 2rem;
+        padding: 1rem 0.4rem;
+    }
+}

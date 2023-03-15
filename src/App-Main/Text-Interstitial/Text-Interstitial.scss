@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.interstitialContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    padding: 3rem 0;
+}
+.interstitialContainer p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0.5rem 2rem;
+}
+.textHeader {
+    margin: 0 2rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+.interstitialTitle {
+    font-family: GreatVibes, Garamond, Georgia, "Comic Sans MS";
+    font-size: 4rem;
+}
+
+span {
+    background-image: linear-gradient(109.6deg, #2384c9 11.2%, $dark 91.1%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

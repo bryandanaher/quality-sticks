@@ -1,0 +1,56 @@
+@import "src/index.scss";
+
+.productCardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 467px; 
+    width: 250px;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px $black;
+    position: relative;
+    transition: 0.1s;
+}
+.productCardContainer:hover {
+    margin-top: .8rem;
+    cursor: pointer;
+}
+.productText {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+    // text-align: center;
+    min-height: 116px;
+    padding-left: 0.5rem;
+}
+.productText h2 {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+.productCardContainer img {
+    // width: 250px;
+    // height: 300px;
+    overflow: hidden;
+}
+.productCost {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.productCost del {
+    margin-right: 7px;
+    color: $dark-accent;
+}
+
+@media only screen and (max-width: 750px) {
+    .productCardContainer {
+        width: 215px;
+        height: fit-content;
+        margin: 0.5rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .productCardContainer {
+        width: 240px;
+    }
+}
